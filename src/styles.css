@@ -12,7 +12,8 @@ h3 {
 }
 
 h1 {
-  font-size: 76px;
+  font-size: 56px;
+  line-height: 1;
   @media (min-width: 576px) {
     font-size: 96px;
   }
@@ -37,13 +38,20 @@ body {
   margin-top: 100px;
 }
 
+.headline {
+  text-align: center;
+  @media (min-width: 576px) {
+    font-size: 48px;
+    text-align: start;
+  }
+}
 .navigation-links {
   display: flex;
   margin-top: 40px;
 }
 
 .navigation-links a {
-  margin: 20px;
+  /* margin: 20px; */
   border-radius: 4px;
   padding: 20px 15px;
   text-decoration: none;
@@ -59,6 +67,20 @@ body {
 .about-link {
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+.contact-link,
+.about-link {
+  margin: 20px;
+}
+
+.project-link {
+  display: block;
+  margin: 0 auto;
+  @media (min-width: 576px) {
+    margin: 20px;
+  }
+  display: block;
+  margin: 0 auto;
 }
 
 .homepage-link {
@@ -82,6 +104,11 @@ body {
 .descriprion {
   font-size: 18px;
   line-height: 1.5;
+  text-align: center;
+
+  @media (min-width: 576px) {
+    text-align: start;
+  }
 }
 
 .descriprion-about {
